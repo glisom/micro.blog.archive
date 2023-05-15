@@ -24,6 +24,32 @@
 	
 	  <div class="h-entry">
 		
+			<h1><a href="https://grantisom.com/2023/05/15/using-act-to.html">Using Act to Run Github Actions Locally</a></h1>
+		
+
+		<a href="https://grantisom.com/2023/05/15/using-act-to.html" class="u-url"><time class="dt-published" datetime="2023-05-15 17:06:58 -0500">May 15, 2023</time></a>
+
+		<div class="e-content">
+			 <p><a href="https://github.com/nektos/act">https://github.com/nektos/act</a></p>
+<p>The Act package offers a convenient way to execute your GitHub Action workflows locally. It&rsquo;s a valuable tool when debugging or working on issues that either have a long runtime or are complex, saving you those precious minutes.</p>
+<h3 id="installation">Installation</h3>
+<p>The installation process is quite straightforward. First, ensure Docker Desktop is installed on your computer. Then, for Mac/Linux users, the easiest installation method is via <a href="https://brew.sh" title="Homebrew">Homebrew</a>.</p>
+<pre><code>brew install act
+</code></pre>
+<p>That&rsquo;s all there is to it! Upon executing your workflows for the first time, the required Docker containers should automatically download.</p>
+<h3 id="setup">Setup</h3>
+<p>An essential point to remember is to <a href="https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">pass in your personal access token from GitHub</a> when running any workflow dependent on SECRETS or environment variables.</p>
+<h3 id="executing-workflows">Executing Workflows</h3>
+<p>With everything set up, running workflows becomes a breeze:</p>
+<pre><code>➜ act pull_request --container-architecture linux/amd64 
+</code></pre>
+<p>Checkout the README for additional examples and a comprehensive breakdown of all the capabilities this package offers. I believe Act is an indispensable tool for anyone working with GitHub Actions who wants to test or debug their changes swiftly.</p>
+
+		</div>
+	  </div>
+	
+	  <div class="h-entry">
+		
 			<h1><a href="https://grantisom.com/2023/01/31/expo-app-config.html">Expo App Config Setup for Multiple Environments</a></h1>
 		
 
